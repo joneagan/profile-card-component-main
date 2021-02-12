@@ -13,7 +13,7 @@ body {
   background-size: 800px;
   background-repeat: no-repeat;
   background-position-x: calc(65% - 400px), calc(65% + 350px);
-  background-position-y: -50vh, 50vh;
+  background-position-y: -45vh, 45vh;
   width: 100vw;
   height: 100vh;
   z-index: -1;
