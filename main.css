@@ -1,0 +1,107 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #1aa5b2 center/cover;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+main {
+  position: relative;
+  width: 100%;
+}
+
+.card {
+  background: white;
+  text-align: center;
+  vertical-align: middle;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: relative;
+  margin: auto;
+  width: 90%;
+  top: 8rem;
+}
+
+.card__top-pattern {
+  background-image: url(images/bg-pattern-card.svg);
+  height: 8rem;
+  border-radius: 16px 16px 0 0;
+}
+
+.card__image-container {
+  position: relative;
+  top: -3.5rem;
+}
+
+.card__image {
+  border-radius: 50%;
+  padding: 0.3rem;
+  background: white;
+}
+
+.personal-details {
+  position: relative;
+  top: -3.5rem;
+}
+
+.personal-info {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.personal-info__item {
+  display: inline-block;
+  font-size: 1.2rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.city {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.9rem;
+}
+
+.stats {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.stat-item {
+  display: inline-block;
+  width: 30%;
+}
+
+.stat-item__num {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.stat-item__label {
+  color: hsl(0, 0%, 59%);
+  font-size: 0.8rem;
+  padding: 0 0 1rem 0;
+  margin: 0;
+  letter-spacing: 0.2rem;
+}
+
+.attribution {
+  position: absolute;
+  font-size: 0.6rem;
+  text-align: center;
+  bottom: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
