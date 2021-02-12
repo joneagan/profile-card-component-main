@@ -1,54 +1,57 @@
 body {
   font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
 }
 
 .background {
   position: fixed;
   top: 0;
   left: 0;
-  background: #1aa5b2 center/cover;
+  background-color: hsl(185, 75%, 39%);
+  background-image: url(images/bg-pattern-top.svg),
+    url(images/bg-pattern-bottom.svg);
+  background-size: 800px;
+  background-repeat: no-repeat;
+  background-position-x: calc(65% - 400px), calc(65% + 350px);
+  background-position-y: -50vh, 50vh;
   width: 100vw;
   height: 100vh;
   z-index: -1;
 }
 
 main {
-  position: relative;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 .card {
-  background: white;
+  background-color: white;
   text-align: center;
   vertical-align: middle;
   box-sizing: border-box;
   border-radius: 16px;
-  position: relative;
   margin: auto;
   width: 90%;
-  top: 8rem;
+  margin-top: 128px;
+  min-width: 300px;
+  max-width: 340px;
+  color: hsl(229, 23%, 23%);
 }
 
 .card__top-pattern {
   background-image: url(images/bg-pattern-card.svg);
-  height: 8rem;
+  height: 128px;
   border-radius: 16px 16px 0 0;
 }
 
 .card__image-container {
-  position: relative;
-  top: -3.5rem;
+  margin-top: -48px;
 }
 
 .card__image {
   border-radius: 50%;
   padding: 0.3rem;
   background: white;
-}
-
-.personal-details {
-  position: relative;
-  top: -3.5rem;
 }
 
 .personal-info {
@@ -59,28 +62,36 @@ main {
 }
 
 .personal-info__item {
-  display: inline-block;
-  font-size: 1.2rem;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
-.name {
-  font-weight: bold;
+.personal-info__item span {
+  font-weight: normal;
+  padding-left: 1rem;
 }
 
 .city {
   color: hsl(0, 0%, 59%);
   font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.line {
+  border-top: 1px solid #e8e8e8;
 }
 
 .stats {
   list-style: none;
   text-align: center;
-  padding: 0;
+  padding: 1rem 0;
 }
 
 .stat-item {
   display: inline-block;
   width: 30%;
+  font-size: 1.125rem;
+  font-weight: bold;
 }
 
 .stat-item__num {
@@ -90,7 +101,8 @@ main {
 
 .stat-item__label {
   color: hsl(0, 0%, 59%);
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  font-weight: lighter;
   padding: 0 0 1rem 0;
   margin: 0;
   letter-spacing: 0.2rem;
@@ -101,6 +113,7 @@ main {
   font-size: 0.6rem;
   text-align: center;
   bottom: 2rem;
+  width: 100vw;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
